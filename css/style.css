@@ -1,0 +1,93 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+ }
+
+:root{
+	--font1: 18px;
+	--font2: 20px;
+	--font3: 24px;
+	--font4: 48px;
+	--border: 1px solid #E2E2E2;
+	--gray: #E2E2E2;
+	font-size: 24px;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+}
+
+main {
+	max-width: 790px;
+	max-height: 230px;
+	margin: 100px auto;
+}
+
+.container {
+	display: flex;
+}
+
+.main {
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 0.75rem;
+	font-size: var(--font2);
+}
+
+form {
+	margin-bottom: 1.7rem;
+}
+
+.form {
+	flex-direction: row;
+	column-gap: 4%;
+	width: 100%;
+	justify-content: space-between;
+	height: 2rem;
+}
+
+.date-input {
+	flex: 1;
+	border: var(--border);
+	font-size: var(--font1);
+	border-radius: 0.4em;
+	font-family: inherit;
+	padding: 0.6rem;
+}
+input {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input:focus {
+	outline: none;
+}
+
+button {
+	flex: 1;
+	font-family: inherit;
+	font-size: var(--font2);
+	color: white;
+	background-color: #5E55D6;
+	border-radius: 0.4em;
+	font-weight: inherit;
+	
+}
+button:hover {
+	cursor: pointer;
+	background-color: #8880f9;
+	transition: 0.5s;
+}
+button:not(:hover){
+	transition: 0.5s;
+}
+
+h1 {
+	margin-bottom: 0.5rem;
+}
+h2 {
+	font-size: var(--font4);
+}
